@@ -1,38 +1,1581 @@
-.App {
-  text-align: center;
+/* ============================================================
+   ⚠️⚠️⚠️ LINKAI 2027 — FINAL FINAL DEFINITIVE V9 REAL FINAL.css
+   STATUS: PROIBIDO PARA DESIGNERS
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Orbitron:wght@400;700;900&family=Press+Start+2P&display=swap");
+
+:root {
+  --ai-purple: #7b00ff;
+  --ai-purple-2: #ff00ff;
+  --ai-cyan: #00ffff;
+  --ai-green: #00ff00;
+  --ai-red: #ff0033;
+  --ai-yellow: #ffff00;
+  --ai-orange: #ff6600;
+  --ai-blue: #0066ff;
+  --ai-pink: #ff1493;
+  --ai-black: #000;
+  --ai-white: #fff;
+
+  /* DESIGN TOKENS™ */
+  --radius: 2px;
+  --radius-more: 97px;
+  --shadow: 7px 7px 0;
+  --slop: 9999px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ============================================================
+   RESET??? NO.
+   ============================================================ */
+
+* {
+  box-sizing: border-box !important;
+
+  margin: 0 !important;
+
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ctext y='25' font-size='24'%3E🤖%3C/text%3E%3C/svg%3E"), auto !important;
+
+  scrollbar-width: thick !important;
+  scrollbar-color: var(--ai-pink) var(--ai-black) !important;
+
+  text-rendering: geometricPrecision !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ============================================================
+   BODY: O COMPUTADOR PEDIU SOCORRO
+   ============================================================ */
+
+body {
+  min-height: 100vh !important;
+
+  margin: 0 !important;
+
+  background:
+    radial-gradient(
+      circle at 13% 17%,
+      rgba(255, 0, 255, .8) 0 3px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 87% 71%,
+      rgba(0, 255, 255, .9) 0 2px,
+      transparent 3px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      transparent 7px,
+      rgba(255, 0, 255, .08) 8px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 13px,
+      rgba(0, 255, 255, .06) 14px
+    ),
+    conic-gradient(
+      from 90deg at 50% 50%,
+      #05000a,
+      #140020,
+      #000b18,
+      #190000,
+      #05000a
+    ) !important;
+
+  color: white !important;
+
+  font-family: "Comic Neue", cursive !important;
+
+  overflow-x: hidden !important;
+
+  animation: body-seizure 9s infinite !important;
+}
+
+/* ============================================================
+   BARRA SUPERIOR ABSOLUTAMENTE DESNECESSÁRIA
+   ============================================================ */
+
+body::before {
+  content:
+    "⚡ LINKAI ⚡ AI POWERED ⚡ 100% HUMAN FREE ⚡ "
+    "NEURAL URL TECHNOLOGY ⚡ WEB3 READY ⚡ QUANTUM LINKS ⚡";
+
+  position: fixed !important;
+
+  z-index: 999999999 !important;
+
+  top: 0 !important;
+  left: -20% !important;
+
+  width: 140% !important;
+
+  height: 31px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: center !important;
+
+  color: #000 !important;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #00ffff 0 12px,
+      #ff00ff 12px 24px,
+      #ffff00 24px 36px,
+      #00ff00 36px 48px
+    ) !important;
+
+  border-bottom: 5px solid #fff !important;
+
+  font-family: "Press Start 2P", monospace !important;
+
+  font-size: 7px !important;
+
+  letter-spacing: 2px !important;
+
+  box-shadow:
+    0 0 10px #ff00ff,
+    0 0 30px #00ffff,
+    0 0 60px #ffff00 !important;
+
+  animation:
+    top-bar-insanity .25s linear infinite !important;
+}
+
+/* ============================================================
+   A PÁGINA
+   ============================================================ */
+
+.ai-page {
+  position: relative !important;
+
+  isolation: isolate !important;
+
+  width: 100% !important;
+
+  min-height: 100vh !important;
+
+  padding: 85px 5vw 100px !important;
+
+  transform:
+    perspective(1500px)
+    rotateX(.2deg) !important;
+
+  background:
+    linear-gradient(
+      115deg,
+      rgba(255,0,255,.05),
+      transparent 30%,
+      rgba(0,255,255,.05)
+    ) !important;
+}
+
+/* ============================================================
+   QUADRADOS ALEATÓRIOS QUE NÃO SERVEM PRA NADA
+   ============================================================ */
+
+.ai-page::before {
+  content: "AI";
+
+  position: absolute !important;
+
+  top: 13% !important;
+  right: 4% !important;
+
+  width: 90px !important;
+  height: 90px !important;
+
+  display: grid !important;
+
+  place-items: center !important;
+
+  color: #000 !important;
+
+  background: #ffff00 !important;
+
+  border: 8px solid #ff0033 !important;
+
+  border-radius: 3px 80px 5px 60px !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 15px !important;
+
+  transform:
+    rotate(23deg)
+    skew(7deg) !important;
+
+  box-shadow:
+    12px 12px 0 #00ffff,
+    24px 24px 0 #ff00ff,
+    36px 36px 0 #00ff00 !important;
+
+  animation:
+    dumb-square 1.2s infinite alternate !important;
+}
+
+.ai-page::after {
+  content: "2027";
+
+  position: absolute !important;
+
+  left: 1% !important;
+  top: 47% !important;
+
+  padding: 20px !important;
+
+  color: #ff0033 !important;
+
+  font-size: 55px !important;
+
+  font-family: "Orbitron" !important;
+
+  font-weight: 900 !important;
+
+  opacity: .13 !important;
+
+  transform: rotate(-71deg) !important;
+
+  text-shadow:
+    5px 5px 0 #00ffff !important;
+
+  pointer-events: none !important;
+}
+
+/* ============================================================
+   NAVBAR — CORPORATE HORROR
+   ============================================================ */
+
+.navbar {
+  position: relative !important;
+
+  min-height: 90px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+  justify-content: space-between !important;
+
+  padding: 14px 18px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,0,255,.25),
+      rgba(0,255,255,.12)
+    ) !important;
+
+  border: 6px solid white !important;
+
+  border-radius:
+    71px
+    4px
+    83px
+    11px !important;
+
+  box-shadow:
+    8px 8px 0 #ff00ff,
+    16px 16px 0 #00ffff,
+    24px 24px 0 #ffff00 !important;
+
+  transform: rotate(.8deg) !important;
+
+  backdrop-filter: blur(4px) !important;
+}
+
+/* ============================================================
+   LOGO QUE NÃO DEVERIA EXISTIR
+   ============================================================ */
+
+.logo {
+  position: relative !important;
+
+  font-family: "Press Start 2P", monospace !important;
+
+  font-size: clamp(15px, 2vw, 25px) !important;
+
+  color: white !important;
+
+  text-transform: uppercase !important;
+
+  transform: rotate(-3deg) !important;
+
+  text-shadow:
+    3px 3px 0 #ff0033,
+    6px 6px 0 #00ffff,
+    9px 9px 0 #ff00ff !important;
+
+  animation: logo-having-a-stroke .7s infinite !important;
+}
+
+.logo::after {
+  content: "™";
+
+  position: absolute !important;
+
+  top: -20px !important;
+  right: -25px !important;
+
+  color: #ffff00 !important;
+
+  font-size: 9px !important;
+
+  transform: rotate(17deg) !important;
+}
+
+.logo-orb {
+  width: 23px !important;
+  height: 23px !important;
+
+  border-radius: 2px !important;
+
+  background:
+    conic-gradient(
+      red,
+      yellow,
+      lime,
+      cyan,
+      blue,
+      magenta,
+      red
+    ) !important;
+
+  border: 3px solid white !important;
+
+  box-shadow:
+    0 0 5px white,
+    0 0 20px #ff00ff,
+    0 0 40px #00ffff !important;
+
+  animation:
+    orb-spin .2s linear infinite !important;
+}
+
+/* ============================================================
+   NAV LINKS
+   ============================================================ */
+
+.navbar nav {
+  display: flex !important;
+
+  gap: 7px !important;
+}
+
+.navbar nav a {
+  position: relative !important;
+
+  padding: 9px 12px !important;
+
+  color: #000 !important;
+
+  background: #00ffff !important;
+
+  border: 3px solid white !important;
+
+  border-radius: 2px !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 7px !important;
+
+  text-decoration: none !important;
+
+  box-shadow: 5px 5px 0 #ff00ff !important;
+
+  transform: rotate(-2deg) !important;
+
+  transition: .07s !important;
+}
+
+.navbar nav a:nth-child(2) {
+  background: #ffff00 !important;
+  transform: rotate(4deg) translateY(3px) !important;
+}
+
+.navbar nav a:nth-child(3) {
+  background: #00ff00 !important;
+  transform: rotate(-7deg) translateY(-2px) !important;
+}
+
+.navbar nav a:nth-child(4) {
+  background: #ff0033 !important;
+  color: white !important;
+  transform: rotate(5deg) !important;
+}
+
+.navbar nav a:hover {
+  transform:
+    rotate(180deg)
+    scale(1.4) !important;
+
+  background: #ff00ff !important;
+
+  color: white !important;
+
+  box-shadow:
+    0 0 20px #ff00ff,
+    0 0 50px #00ffff !important;
+}
+
+/* ============================================================
+   HERO — O DESIGNER FOI EMBORA
+   ============================================================ */
+
+.hero {
+  position: relative !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    minmax(0, 1.2fr)
+    minmax(300px, .8fr) !important;
+
+  gap: 5vw !important;
+
+  padding: 120px 0 80px !important;
+
+  transform: rotate(-.4deg) !important;
+}
+
+.hero h1 {
+  position: relative !important;
+
+  margin: 30px 0 !important;
+
+  font-family: "Press Start 2P", monospace !important;
+
+  font-size: clamp(36px, 7vw, 90px) !important;
+
+  line-height: .91 !important;
+
+  letter-spacing: -8px !important;
+
+  color: white !important;
+
+  text-transform: uppercase !important;
+
+  text-shadow:
+    5px 0 #ff0033,
+    -5px 0 #00ffff,
+    0 5px #ff00ff,
+    0 -5px #ffff00 !important;
+
+  transform:
+    skew(-7deg)
+    rotate(-1deg) !important;
+
+  animation:
+    title-glitch .18s infinite !important;
+}
+
+.hero h1::before {
+  content: "SHORTEN.";
+
+  position: absolute !important;
+
+  top: 9px !important;
+  left: 7px !important;
+
+  color: #ff0033 !important;
+
+  opacity: .5 !important;
+
+  clip-path: inset(40% 0 40% 0) !important;
+
+  transform: translateX(-12px) !important;
+
+  pointer-events: none !important;
+}
+
+.hero h1::after {
+  content: "URL.";
+
+  position: absolute !important;
+
+  bottom: -20px !important;
+  right: 20px !important;
+
+  color: #00ffff !important;
+
+  font-size: .2em !important;
+
+  transform: rotate(7deg) !important;
+}
+
+.gradient-text {
+  color: transparent !important;
+
+  background:
+    repeating-linear-gradient(
+      90deg,
+      #ff0033 0 10px,
+      #ffff00 10px 20px,
+      #00ff00 20px 30px,
+      #00ffff 30px 40px,
+      #ff00ff 40px 50px
+    ) !important;
+
+  background-size: 200px 100% !important;
+
+  background-clip: text !important;
+  -webkit-background-clip: text !important;
+
+  -webkit-text-fill-color: transparent !important;
+
+  animation:
+    gradient-crack 0.4s linear infinite !important;
+}
+
+/* ============================================================
+   BADGE "IA"
+   ============================================================ */
+
+.ai-badge {
+  display: inline-flex !important;
+
+  padding: 11px 15px !important;
+
+  color: #000 !important;
+
+  background: #00ff00 !important;
+
+  border: 5px solid white !important;
+
+  border-radius: 0 30px 3px 40px !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 8px !important;
+
+  box-shadow:
+    7px 7px 0 #ff00ff,
+    -5px -5px 0 #00ffff !important;
+
+  transform: rotate(3deg) !important;
+
+  animation:
+    badge-freakout .3s infinite alternate !important;
+}
+
+.ai-badge::before {
+  content: "🤖 ";
+}
+
+.ai-badge::after {
+  content: "!!!";
+}
+
+/* ============================================================
+   TEXTO
+   ============================================================ */
+
+.hero-text {
+  max-width: 650px !important;
+
+  padding: 17px !important;
+
+  color: #fff !important;
+
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255,0,255,.12) 0 10px,
+      rgba(0,255,255,.12) 10px 20px
+    ) !important;
+
+  border-left: 12px solid #ff00ff !important;
+  border-right: 12px solid #00ffff !important;
+
+  border-radius: 3px !important;
+
+  font-size: 16px !important;
+
+  line-height: 1.6 !important;
+
+  box-shadow:
+    0 0 20px rgba(255,0,255,.4) !important;
+
+  transform: rotate(.5deg) !important;
+}
+
+/* ============================================================
+   URL BOX — A PARTE MAIS IMPORTANTE E MAIS FEIA
+   ============================================================ */
+
+.url-box {
+  position: relative !important;
+
+  display: flex !important;
+
+  gap: 10px !important;
+
+  margin-top: 30px !important;
+
+  padding: 12px !important;
+
+  background:
+    linear-gradient(
+      45deg,
+      #ff00ff,
+      #7b00ff,
+      #00ffff,
+      #00ff00,
+      #ffff00
+    ) !important;
+
+  background-size: 500% 500% !important;
+
+  border: 7px solid white !important;
+
+  border-radius:
+    3px
+    60px
+    5px
+    70px !important;
+
+  box-shadow:
+    10px 10px 0 #ff0033,
+    20px 20px 0 #ffff00,
+    30px 30px 0 #00ff00 !important;
+
+  animation:
+    box-gradient-chaos 2s infinite !important;
+}
+
+.url-input {
+  flex: 1 !important;
+
+  background: #000 !important;
+
+  border: 4px solid #00ffff !important;
+
+  border-radius: 2px 50px 2px 50px !important;
+
+  box-shadow:
+    inset 0 0 20px #ff00ff !important;
+}
+
+.url-input input {
+  width: 100% !important;
+
+  padding: 18px !important;
+
+  color: #00ff00 !important;
+
+  background: transparent !important;
+
+  border: 0 !important;
+  outline: 0 !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 10px !important;
+
+  text-shadow:
+    0 0 8px #00ff00 !important;
+}
+
+.url-input input::placeholder {
+  color: #ff00ff !important;
+
+  opacity: 1 !important;
+
+  text-transform: uppercase !important;
+}
+
+.magic-button {
+  position: relative !important;
+
+  min-width: 190px !important;
+
+  color: #000 !important;
+
+  background:
+    conic-gradient(
+      #ff0033,
+      #ffff00,
+      #00ff00,
+      #00ffff,
+      #0066ff,
+      #ff00ff,
+      #ff0033
+    ) !important;
+
+  border: 5px solid white !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 10px !important;
+
+  box-shadow:
+    6px 6px 0 #000 !important;
+
+  animation:
+    button-seizure .15s infinite !important;
+}
+
+.magic-button::before {
+  content: "🚀";
+  margin-right: 8px !important;
+}
+
+.magic-button:hover {
+  animation:
+    button-explosion .2s infinite !important;
+}
+
+/* ============================================================
+   DASHBOARD — CYBERPUNK POWERPOINT
+   ============================================================ */
+
+.dashboard {
+  position: relative !important;
+
+  padding: 25px !important;
+
+  border: 7px solid white !important;
+
+  border-radius:
+    70px
+    3px
+    90px
+    8px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,0,255,.3),
+      rgba(0,255,255,.2)
+    ) !important;
+
+  box-shadow:
+    10px 10px 0 #ff00ff,
+    20px 20px 0 #00ffff,
+    30px 30px 0 #ffff00 !important;
+
+  transform:
+    rotateY(-15deg)
+    rotateX(6deg)
+    rotateZ(2deg) !important;
+
+  animation:
+    dashboard-earthquake .5s infinite alternate !important;
+}
+
+.dashboard::before {
+  content: "LIVE • LIVE • LIVE • LIVE • LIVE • LIVE";
+
+  position: absolute !important;
+
+  top: 0 !important;
+  left: 0 !important;
+
+  width: 100% !important;
+
+  padding: 7px !important;
+
+  color: #000 !important;
+
+  background: #00ff00 !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 6px !important;
+
+  text-align: center !important;
+
+  overflow: hidden !important;
+}
+
+/* ============================================================
+   GRÁFICO
+   ============================================================ */
+
+.chart-area {
+  position: relative !important;
+
+  margin-top: 30px !important;
+
+  padding: 10px !important;
+
+  border: 3px dashed #ff00ff !important;
+
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 19px,
+      rgba(0,255,255,.15) 20px
+    ) !important;
+}
+
+.chart-area::after {
+  content: "STONKS ↑↑↑";
+
+  position: absolute !important;
+
+  top: 10px !important;
+  right: 5px !important;
+
+  color: #00ff00 !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 7px !important;
+
+  transform: rotate(8deg) !important;
+}
+
+.line {
+  stroke: #00ff00 !important;
+
+  stroke-width: 8 !important;
+
+  filter:
+    drop-shadow(0 0 5px #00ff00)
+    drop-shadow(0 0 15px #ff00ff)
+    drop-shadow(0 0 30px #00ffff) !important;
+
+  animation:
+    graph-hallucination .5s infinite alternate !important;
+}
+
+.chart-point {
+  fill: #ff0033 !important;
+
+  stroke: #ffff00 !important;
+
+  stroke-width: 8 !important;
+
+  filter:
+    drop-shadow(0 0 10px #ff0033) !important;
+
+  animation:
+    point-panic .2s infinite alternate !important;
+}
+
+/* ============================================================
+   CHIPS FLUTUANTES
+   ============================================================ */
+
+.floating-chip {
+  padding: 10px 15px !important;
+
+  color: #000 !important;
+
+  background: #ffff00 !important;
+
+  border: 5px solid white !important;
+
+  border-radius: 0 !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 7px !important;
+
+  box-shadow:
+    7px 7px 0 #ff00ff,
+    14px 14px 0 #00ffff !important;
+
+  animation:
+    chip-being-possessed .7s infinite alternate !important;
+}
+
+.chip-two {
+  color: white !important;
+
+  background: #ff0033 !important;
+
+  transform: rotate(11deg) !important;
+}
+
+/* ============================================================
+   SOCIAL PROOF — "CONFIA"
+   ============================================================ */
+
+.social-proof {
+  margin-top: 70px !important;
+
+  padding: 25px !important;
+
+  border: 6px double #ff00ff !important;
+
+  background: #08000f !important;
+
+  transform: rotate(-1deg) !important;
+
+  box-shadow:
+    9px 9px 0 #00ffff !important;
+}
+
+.social-proof > span {
+  color: #ffff00 !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 8px !important;
+
+  text-shadow:
+    0 0 10px #ffff00 !important;
+}
+
+.brands {
+  display: flex !important;
+
+  flex-wrap: wrap !important;
+
+  gap: 13px !important;
+
+  margin-top: 20px !important;
+}
+
+.brands strong {
+  padding: 12px !important;
+
+  color: #000 !important;
+
+  background: #00ffff !important;
+
+  border: 3px solid white !important;
+
+  box-shadow:
+    5px 5px 0 #ff00ff !important;
+
+  font-family: "Orbitron" !important;
+
+  transform:
+    rotate(-4deg)
+    scale(1.03) !important;
+}
+
+.brands strong:nth-child(2) {
+  background: #ff00ff !important;
+  transform: rotate(8deg) scale(.9) !important;
+}
+
+.brands strong:nth-child(3) {
+  background: #ffff00 !important;
+  transform: rotate(-11deg) !important;
+}
+
+.brands strong:nth-child(4) {
+  background: #00ff00 !important;
+  transform: rotate(6deg) scale(1.1) !important;
+}
+
+.brands strong:nth-child(5) {
+  background: #ff0033 !important;
+  color: white !important;
+  transform: rotate(-7deg) !important;
+}
+
+/* ============================================================
+   CARDS — CADA UMA UMA PERSONALIDADE
+   ============================================================ */
+
+.feature-grid {
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr)) !important;
+
+  gap: 23px !important;
+
+  margin-top: 50px !important;
+}
+
+.feature-card {
+  position: relative !important;
+
+  min-height: 230px !important;
+
+  padding: 27px !important;
+
+  border: 6px solid white !important;
+
+  border-radius:
+    5px
+    80px
+    8px
+    40px !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,0,255,.18),
+      rgba(0,255,255,.08)
+    ) !important;
+
+  box-shadow:
+    9px 9px 0 #ff00ff,
+    18px 18px 0 #00ffff !important;
+
+  transform: rotate(-1deg) !important;
+
+  transition: .1s !important;
+}
+
+.feature-card:nth-child(2) {
+  transform: rotate(2deg) translateY(20px) !important;
+
+  border-color: #ffff00 !important;
+
+  box-shadow:
+    9px 9px 0 #00ff00,
+    18px 18px 0 #ff0033 !important;
+}
+
+.feature-card:nth-child(3) {
+  transform: rotate(-3deg) !important;
+
+  border-color: #00ffff !important;
+}
+
+.feature-card:nth-child(4) {
+  transform: rotate(1deg) translateY(-15px) !important;
+
+  box-shadow:
+    9px 9px 0 #ffff00,
+    18px 18px 0 #ff00ff !important;
+}
+
+.feature-card:hover {
+  transform:
+    rotate(7deg)
+    scale(1.08)
+    translateY(-20px) !important;
+
+  z-index: 50 !important;
+
+  background:
+    repeating-conic-gradient(
+      from 0deg,
+      #ff00ff 0 20deg,
+      #00ffff 20deg 40deg
+    ) !important;
+
+  box-shadow:
+    0 0 20px #ff00ff,
+    0 0 50px #00ffff,
+    15px 15px 0 #ffff00 !important;
+}
+
+.feature-card h3 {
+  font-family: "Press Start 2P" !important;
+
+  font-size: 16px !important;
+
+  line-height: 1.5 !important;
+
+  color: white !important;
+
+  text-shadow:
+    3px 3px 0 #ff00ff !important;
+}
+
+.feature-card p {
+  margin-top: 20px !important;
+
+  color: #ddd !important;
+
+  font-size: 13px !important;
+}
+
+/* ============================================================
+   FINAL CTA — O CRIME FINAL
+   ============================================================ */
+
+.final-cta {
+  position: relative !important;
+
+  margin-top: 150px !important;
+
+  padding: 80px 30px !important;
+
+  text-align: center !important;
+
+  border: 9px solid white !important;
+
+  border-radius:
+    5px
+    100px
+    8px
+    120px !important;
+
+  background:
+    conic-gradient(
+      from 0deg,
+      #ff0033,
+      #ff00ff,
+      #0066ff,
+      #00ffff,
+      #00ff00,
+      #ffff00,
+      #ff6600,
+      #ff0033
+    ) !important;
+
+  background-size: 300% 300% !important;
+
+  box-shadow:
+    15px 15px 0 #ff00ff,
+    30px 30px 0 #00ffff,
+    45px 45px 0 #ffff00,
+    60px 60px 0 #ff0033 !important;
+
+  animation:
+    cta-nightmare 1s linear infinite !important;
+}
+
+.final-cta::before {
+  content:
+    "⚠️ ATTENTION ⚠️ WARNING ⚠️ AI DETECTED ⚠️ "
+    "ATTENTION ⚠️ WARNING ⚠️";
+
+  position: absolute !important;
+
+  top: 0 !important;
+  left: 0 !important;
+
+  width: 100% !important;
+
+  padding: 7px !important;
+
+  background: #000 !important;
+
+  color: #ff0033 !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 7px !important;
+
+  overflow: hidden !important;
+}
+
+.final-cta h2 {
+  margin: 30px 0 !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: clamp(35px, 6vw, 75px) !important;
+
+  line-height: 1.3 !important;
+
+  color: white !important;
+
+  text-shadow:
+    7px 7px 0 #ff0033,
+    -7px -7px 0 #00ffff,
+    14px 14px 0 #ff00ff !important;
+
+  animation:
+    final-text-break .2s infinite !important;
+}
+
+.cta-button {
+  padding: 20px 30px !important;
+
+  color: #000 !important;
+
+  background: #ffff00 !important;
+
+  border: 6px solid white !important;
+
+  font-family: "Press Start 2P" !important;
+
+  font-size: 10px !important;
+
+  box-shadow:
+    8px 8px 0 #000 !important;
+
+  animation:
+    cta-button-panic .25s infinite alternate !important;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+footer {
+  position: relative !important;
+
+  margin-top: 100px !important;
+
+  padding: 30px !important;
+
+  border: 5px dashed #00ffff !important;
+
+  background: #030003 !important;
+
+  transform: rotate(.7deg) !important;
+}
+
+.footer-logo {
+  color: #ff00ff !important;
+
+  font-family: "Press Start 2P" !important;
+
+  text-shadow:
+    3px 3px 0 #00ffff !important;
+}
+
+.footer-links a {
+  color: #ffff00 !important;
+
+  text-decoration:
+    underline
+    wavy
+    #ff0033 !important;
+}
+
+/* ============================================================
+   SCROLLBAR: A PIADA FINAL
+   ============================================================ */
+
+::-webkit-scrollbar {
+  width: 22px !important;
+}
+
+::-webkit-scrollbar-track {
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #ff00ff 0 10px,
+      #00ffff 10px 20px
+    ) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background:
+    linear-gradient(
+      #ffff00,
+      #ff0033
+    ) !important;
+
+  border: 4px solid #000 !important;
+
+  border-radius: 0 !important;
+}
+
+/* ============================================================
+   SELEÇÃO
+   ============================================================ */
+
+::selection {
+  color: #000 !important;
+
+  background: #00ff00 !important;
+}
+
+/* ============================================================
+   RESPONSIVO™
+   ============================================================ */
+
+@media (max-width: 850px) {
+  .hero {
+    grid-template-columns: 1fr !important;
+
+    padding-top: 80px !important;
+  }
+
+  .navbar nav {
+    display: none !important;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .feature-card,
+  .feature-card:nth-child(n) {
+    transform:
+      rotate(
+        calc(var(--rotation, 1) * 2deg)
+      ) !important;
+  }
+
+  .url-box {
+    flex-direction: column !important;
+
+    border-radius: 5px !important;
+  }
+
+  .magic-button {
+    width: 100% !important;
+  }
+
+  .dashboard {
+    transform:
+      rotate(-4deg)
+      scale(.9) !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* ============================================================
+   ANIMAÇÕES PROIBIDAS PELA CONVENÇÃO DE GENEBRA
+   ============================================================ */
+
+@keyframes body-seizure {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    filter: hue-rotate(20deg);
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes top-bar-insanity {
   from {
-    transform: rotate(0deg);
+    transform: translateX(-5%);
   }
+
+  to {
+    transform: translateX(5%);
+  }
+}
+
+@keyframes logo-having-a-stroke {
+  0% {
+    transform: rotate(-3deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(4deg) scale(1.04);
+  }
+
+  100% {
+    transform: rotate(-1deg) scale(.97);
+  }
+}
+
+@keyframes orb-spin {
   to {
     transform: rotate(360deg);
   }
 }
+
+@keyframes dumb-square {
+  from {
+    transform:
+      rotate(20deg)
+      translate(0);
+  }
+
+  to {
+    transform:
+      rotate(380deg)
+      translate(-40px, 50px)
+      scale(1.4);
+  }
+}
+
+@keyframes title-glitch {
+  0% {
+    transform: skew(-7deg) translateX(0);
+  }
+
+  25% {
+    transform: skew(10deg) translateX(3px);
+  }
+
+  50% {
+    transform: skew(-14deg) translateX(-5px);
+  }
+
+  75% {
+    transform: skew(4deg) translateX(7px);
+  }
+
+  100% {
+    transform: skew(-7deg) translateX(0);
+  }
+}
+
+@keyframes gradient-crack {
+  to {
+    background-position: 200px 0;
+  }
+}
+
+@keyframes badge-freakout {
+  from {
+    transform: rotate(-4deg) scale(1);
+  }
+
+  to {
+    transform:
+      rotate(6deg)
+      scale(1.12)
+      translateY(-3px);
+  }
+}
+
+@keyframes button-seizure {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  50% {
+    transform: rotate(2deg) scale(1.03);
+  }
+
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes button-explosion {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3) rotate(20deg);
+  }
+
+  100% {
+    transform: scale(.8) rotate(-20deg);
+  }
+}
+
+@keyframes dashboard-earthquake {
+  from {
+    transform:
+      rotateY(-15deg)
+      rotateX(6deg)
+      rotateZ(1deg);
+  }
+
+  to {
+    transform:
+      rotateY(-12deg)
+      rotateX(8deg)
+      rotateZ(-1deg)
+      translateY(5px);
+  }
+}
+
+@keyframes graph-hallucination {
+  from {
+    filter:
+      drop-shadow(0 0 5px #00ff00);
+  }
+
+  to {
+    filter:
+      drop-shadow(0 0 30px #ff00ff)
+      hue-rotate(90deg);
+  }
+}
+
+@keyframes point-panic {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.8);
+  }
+}
+
+@keyframes chip-being-possessed {
+  from {
+    transform:
+      rotate(-12deg)
+      translate(0, 0);
+  }
+
+  to {
+    transform:
+      rotate(18deg)
+      translate(20px, -15px);
+  }
+}
+
+@keyframes box-gradient-chaos {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes cta-nightmare {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes final-text-break {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px) skew(2deg);
+  }
+
+  100% {
+    transform: translateX(-4px) skew(-2deg);
+  }
+}
+
+@keyframes cta-button-panic {
+  from {
+    transform:
+      rotate(-3deg)
+      scale(1);
+  }
+
+  to {
+    transform:
+      rotate(4deg)
+      scale(1.12);
+  }
+}
+
+/* ============================================================
+   FINAL OVERRIDE
+   ============================================================ */
+
+html {
+  filter: saturate(1.15) contrast(1.05) !important;
+}
+
+a,
+button,
+input {
+  outline-offset: 7px !important;
+}
+
+button:focus,
+a:focus,
+input:focus {
+  outline:
+    5px dashed #ffff00 !important;
+
+  box-shadow:
+    0 0 0 10px #ff00ff !important;
+}
+
+/* ============================================================
+   FIM.
+   NÃO HÁ MAIS DESIGN.
+   ============================================================ */
