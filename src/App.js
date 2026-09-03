@@ -1,7 +1,13 @@
+import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  // https://pt-br.react.dev/reference/react/hooks
+  const [url, setUrl] = useState('');
+
+
   return (
     <main className="ai-page">
       <div className="noise" />
@@ -64,7 +70,9 @@ function App() {
               <input
                 type="text"
                 placeholder="Paste your long URL here..."
-              />
+                onChange={(e) => setUrl(e.target.value)}
+                />
+                
 
               <div className="input-status">
                 <span />
